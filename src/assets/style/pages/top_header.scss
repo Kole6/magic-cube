@@ -1,0 +1,62 @@
+.head {
+    min-height: 100%;
+
+    .header {
+        width: 100%;
+        height: 58px;
+        color: #fff;
+        background-color: #1d4c9e;
+
+        .el-dropdown {
+            color: #fff;
+        }
+
+        .header-el {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .img {
+            padding-left: 10px;
+            img {
+                cursor: pointer;
+                padding: 4px 8px;
+            }
+        }
+
+        .appName {
+            font-size: 24px;
+            line-height: 65px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-family:YouYuan;
+            cursor: pointer;
+        }
+
+        .right-tu {
+            margin-top: 6px;
+            margin-right: 50px;
+            cursor: pointer;
+            float: right;
+
+            span {
+                padding-left: 8px;
+                padding-right: 30px;
+
+                i {
+                    position: absolute;
+                    margin-top: 18px;
+                    transition: .3s;
+                }
+
+                .rota {
+                    transform: rotate(180deg);
+                }
+            }
+
+            .headers {
+                width: 42px;
+            }
+        }
+    }
+}

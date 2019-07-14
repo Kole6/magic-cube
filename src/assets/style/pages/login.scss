@@ -1,0 +1,272 @@
+#login_wrapper {
+    background: url(../assets/img/mofang/bj2.png) no-repeat;
+    height: 100%;
+    width: 100%;
+    min-width: 1200px;
+    overflow: auto;
+    background-size: 100%;
+    position: relative;
+    .login_title {
+      font-size: 24px;
+      margin-left: 80px;
+      margin-top: 30px;
+      height: 50px;
+      position: relative;
+      img {
+        width: 70px;
+      }
+      span {
+        padding-left: 10px;
+        padding-top: 30px;
+        position: absolute;
+      }
+    }
+    .login_content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 400px;
+      width: 30%;
+      background: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      position: absolute;
+      left: 80px;
+      top: 20%;
+      box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.1);
+      .user_login {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0 0 0 20px;
+        span {
+          font-size: 12px;
+          margin-top: 10px;
+          display: inline-block;
+        }
+      }
+      .user_list {
+        font-size: 0;
+        padding-bottom: 10px;
+        li {
+          display: inline-block;
+          font-size: 14px;
+          width: 25%;
+          margin: 0 3%;
+          img {
+            margin-left: 24%;
+            border: 1px solid #999;
+            border-radius: 50%;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            width: 50%;
+          }
+          img:hover {
+            border: 1px solid #2fc8dd;
+            border-radius: 50%;
+          }
+          .choose_user {
+            border: 1px solid #2fc8dd;
+            background: #2fc8dd;
+            border-radius: 50%;
+          }
+          .login_role {
+            display: block;
+            text-align: center;
+            color: #a2a6b2;
+            font-weight: 600;
+            margin-left: 17px;
+          }
+        }
+      }
+    }
+    .logining {
+      // margin: 20px 0 10px 0;
+      padding: 0 0 0 36px;
+      button {
+        background: #27a8ea;
+        border: 0;
+        padding: 10px 40px;
+        color: #fff;
+        border-radius: 20px;
+        cursor: pointer;
+        width: 91%;
+        font-size: 16px;
+      }
+    }
+    .login_message {
+      margin-left: 36px;
+      .login_account {
+        margin-bottom: 12px;
+        line-height: 3rem;
+        input {
+          padding: 5px 20px;
+        }
+        .pass_word {
+          height: 40px;
+          width: 81%;
+          font-size: 14px;
+          label {
+            width: 50%;
+            height: 40px;
+            color: #333;
+            display: inline-block;
+          }
+          .getPassword {
+            float: left;
+            height: 40px;
+            margin-top: -10px;
+          }
+        }
+        label {
+          width: 50%;
+          height: 40px;
+          font-size: 13px;
+          color: #333;
+          display: block;
+        }
+        input[type="text"],
+        input[type="password"] {
+          height: 2rem;
+          width: 89%;
+          border: none;
+          border-radius: 3px;
+          background: #f7f8f9;
+          font-size: 12px;
+          padding-left: 5px;
+          margin-bottom: 15px;
+        }
+      }
+  
+      .scue {
+        line-height: 50px;
+        font-size: 12px;
+        margin-left: 5%;
+        .click_here {
+          color: #2a58ad;
+          padding-left: 3px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 1401px) {
+    #login_wrapper {
+      .login_title {
+        margin-top: 70px;
+      }
+      .login_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 480px;
+  
+        width: 30%;
+        background: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 5px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: absolute;
+        // min-height: 600px;
+        left: 80px;
+        .user_login {
+          font-size: 24px;
+          font-weight: bold;
+          padding: 5px 0 0 20px;
+          span {
+            font-size: 16px;
+            font-weight: 300;
+          }
+        }
+        .user_list {
+          font-size: 0;
+          padding-bottom: 10px;
+          li {
+            display: inline-block;
+            font-size: 14px;
+            width: 30%;
+            margin: 0 1%;
+            img {
+              margin-left: 24%;
+              border: 1px solid #999;
+              border-radius: 50%;
+              padding: 10px;
+              text-align: center;
+              cursor: pointer;
+              width: 50%;
+            }
+            img:hover {
+              border: 1px solid #2fc8dd;
+              border-radius: 50%;
+            }
+            .choose_user {
+              border: 1px solid #2fc8dd;
+              background: #2fc8dd;
+              border-radius: 50%;
+            }
+            .login_role {
+              display: block;
+              text-align: center;
+              color: #a2a6b2;
+              font-weight: 600;
+              margin-left: 17px;
+            }
+          }
+        }
+      }
+      .login_message {
+        margin-left: 36px;
+        .login_account {
+          line-height: 3.5rem;
+          .pass_word {
+            height: 40px;
+            width: 81%;
+            font-size: 14px;
+            label {
+              width: 50%;
+              height: 40px;
+              color: #333;
+              display: inline-block;
+            }
+            .getPassword {
+              float: left;
+              height: 40px;
+              margin-top: -10px;
+            }
+          }
+          label {
+            width: 50%;
+            height: 40px;
+            font-size: 13px;
+            color: #333;
+            display: block;
+          }
+          input[type="text"],
+          input[type="password"] {
+            height: 2.5rem;
+            width: 89%;
+            border: none;
+            // border-radius: 10px;
+            background: #f7f8f9;
+            font-size: 18px;
+            padding-left: 15px;
+            margin-bottom: 20px;
+          }
+        }
+        .scue {
+          line-height: 50px;
+          font-size: 12px;
+          margin-left: 5%;
+          .click_here {
+            color: #2a58ad;
+            padding-left: 3px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }

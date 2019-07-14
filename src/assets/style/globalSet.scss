@@ -1,0 +1,14 @@
+@font-face{
+    font-family: setFont;
+    src:local('微软雅黑');
+}
+$wid : 1000px;
+$globalMainColor:#41B2EA;
+$globalMainColor2:#af74ec;
+$globalMainColor3:#f3f7fd;
+$sidebarWidth:270px;
+@mixin gobalBackground {
+    background-color: #fff;
+    border-radius: 5px;
+    min-height: 100%;
+}
