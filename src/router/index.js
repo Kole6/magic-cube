@@ -3,7 +3,7 @@ import Router from 'vue-router'
 // import routerCollect from './routerCollect'
 // import routerManage from './routerManage'
 Vue.use(Router);
-export default new Router({
+const router = new Router({
     linkActiveClass: 'active',
     linkExactActiveClass: 'active-exact',
     routes: [{
@@ -137,3 +137,14 @@ export default new Router({
         },
     ]
 })
+
+/* router.beforeEach((to, from, next) => {
+    if (to.path === '/login') next();
+    else
+    if (localStorage.token) next()
+    else next({
+        path: '/login'
+    });
+}) */
+
+export default router
